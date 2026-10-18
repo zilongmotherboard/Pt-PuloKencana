@@ -458,7 +458,6 @@ background:#c60000;
 	margin-bottom: 80px;
 }
 
-/* --- KODE TAMBAHAN UNTUK EFEK BORDER & BAYANGAN COUNTER --- */
 .counter_feature .row.text-center > div {
    
   padding: 30px 15px !important; 
@@ -1518,6 +1517,63 @@ text-transform: uppercase;}
  * 17.START PARTNER DESIGN
  * ----------------------------------------------------------------------------------------
 */
+/* 1. Background Biru Utama untuk Area Testimoni */
+.testimonial_area {
+    background-color: #2c3e50 !important; /* Warna biru gelap */
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+/* 2. Judul Utama & Sub-judul Tetap Putih */
+.testimonial_area .section_title h2,
+.testimonial_area h2, 
+.testimonial_area p {
+    color: #ffffff !important;
+}
+
+/* 3. Kotak Testimoni Menggunakan CSS Grid (Sangat Aman) */
+.single_testimonial {
+    background-color: rgba(255, 255, 255, 0.08) !important; /* Kotak abu-abu transparan */
+    padding: 25px !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 12px !important;
+    margin-bottom: 30px !important;
+    
+    /* Menggunakan grid agar foto dan teks terbagi dengan porsi adil */
+    display: grid !important;
+    grid-template-columns: auto 1fr; /* Foto otomatis, teks mengambil sisa ruang penuh */
+    gap: 20px !important;            /* Jarak aman antara foto dan teks */
+}
+
+/* 4. Mengatur Ukuran Foto */
+.single_testimonial img {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+/* 5. Memaksa Semua Teks di Dalam Kotak Berwarna Putih & Melebar Normal */
+.single_testimonial p,
+.single_testimonial h2,
+.single_testimonial h3,
+.single_testimonial h4,
+.single_testimonial h5,
+.single_testimonial span {
+    color: #ffffff !important;
+    display: block !important;
+    width: 100% !important; /* Memaksa teks menggunakan ruang yang tersedia secara penuh */
+}
+
+/* 6. Pengaturan khusus Layar HP agar Menyesuaikan */
+@media (max-width: 767px) {
+    .single_testimonial {
+        grid-template-columns: 1fr; /* Menjadi 1 kolom ke bawah saat di HP */
+        text-align: center !important;
+        justify-items: center;
+    }
+}
+
 .partner-logo {padding-bottom: 40px;}
 .single_logo {}
 .single_logo a img {
@@ -1683,7 +1739,7 @@ padding: 0;
 color:#fff;
 }
 .f_facebook{background:#3B5998;}
-.f_twitter{background:#1A90D9;}
+.f_whatsApp{background:#00ff2a;}
 .f_instagram{background:#FF5252;}
 .f_linkedin{background:#0e76a8;}
 /*END SOCIAL PROFILE CSS*/
