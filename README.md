@@ -41,3 +41,5 @@ jika ingin menambahkan patner bisa gunakan kode ini
 
 
 <img src="assets/img/testimonial/.jpg" alt="testimonial-image" />
+
+untuk 
