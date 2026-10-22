@@ -378,6 +378,60 @@ video {min-width: 100%;height:100%; }
 .footer .newsletter-form ul.jam-operasional li {
     color: #ffffff !important;
 }
+
+/* ===== PORTFOLIO RESPONSIF ===== */
+.portfolio_area .portfolio-item {
+  margin-bottom: 24px;
+}
+
+.portfolio_area .single-gallery {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.portfolio_area .single-gallery img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  aspect-ratio: 4 / 3;       /* desktop & laptop */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio_area .single-gallery:hover img {
+  transform: scale(1.05);
+}
+
+/* Layar besar (monitor lebar) */
+@media (min-width: 1600px) {
+  .portfolio_area .single-gallery img { aspect-ratio: 16 / 10; }
+}
+
+/* Tablet landscape & laptop kecil */
+@media (max-width: 1199px) {
+  .portfolio_area .single-gallery img { aspect-ratio: 4 / 3; }
+}
+
+/* Tablet portrait */
+@media (max-width: 991px) {
+  .portfolio_area .portfolio-item { margin-bottom: 20px; }
+  .portfolio_area .single-gallery img { aspect-ratio: 3 / 2; }
+}
+
+/* HP */
+@media (max-width: 767px) {
+  .portfolio_area .portfolio-item { margin-bottom: 16px; }
+  .portfolio_area .single-gallery img { aspect-ratio: 16 / 10; }
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+  .portfolio_area .single-gallery { border-radius: 6px; }
+  .portfolio_area .single-gallery img { aspect-ratio: 4 / 3; }
+}
 /*
 * ----------------------------------------------------------------------------------------
 * 03.END HOME DESIGN
