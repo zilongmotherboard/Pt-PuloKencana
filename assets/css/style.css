@@ -1972,6 +1972,19 @@ position: relative;
 	width: 70px;
 	margin-bottom: 20px;
 }
+.single_service img.team-img {
+  display: block;
+  width: 100%;
+  max-width: 260px;            /* atur angka ini untuk memperkecil/memperbesar foto */
+  height: 300px;               /* tinggi foto, samakan untuk semua foto */
+  object-fit: cover;           /* foto dipotong rapi, tidak gepeng */
+  object-position: top center; /* wajah tetap terlihat */
+  margin: 0 auto 25px;         /* foto di tengah kartu */
+}
+
+.single_service {
+  overflow: hidden;            /* jaga agar apa pun tidak keluar dari container */
+}	
 .single_marketing h3{}
 .single_marketing p{overflow: hidden;}
 /* ----------------------------------------------------------------------------------------
