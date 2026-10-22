@@ -1560,12 +1560,12 @@ text-transform: uppercase;}
 
 /*
  * ----------------------------------------------------------------------------------------
- * 17.START PARTNER DESIGN
+ * 17.START TESTIMONIAL DESIGN
  * ----------------------------------------------------------------------------------------
 */
 /* 1. Background Biru Utama untuk Area Testimoni */
 .testimonial_area {
-    background-color: #0a4189 !important; /* Warna biru gelap */
+    background-color: #c60000 !important; /* Warna biru gelap */
     padding-top: 80px !important;
     padding-bottom: 80px !important;
 }
@@ -1957,6 +1957,7 @@ position: relative;
 .marketing_area{}
 .marketing_content{}
 .marketing_content h2 {
+	collor: 
 	margin-bottom: 40px;
 	font-size: 40px;
 	font-weight: 600;
@@ -1975,15 +1976,15 @@ position: relative;
 .single_service img.team-img {
   display: block;
   width: 100%;
-  max-width: 260px;            /* atur angka ini untuk memperkecil/memperbesar foto */
-  height: 300px;               /* tinggi foto, samakan untuk semua foto */
-  object-fit: cover;           /* foto dipotong rapi, tidak gepeng */
-  object-position: top center; /* wajah tetap terlihat */
-  margin: 0 auto 25px;         /* foto di tengah kartu */
+  max-width: 260px;            
+  height: 300px;         
+  object-fit: cover;       
+  object-position: top center; 
+  margin: 0 auto 25px;         
 }
 
 .single_service {
-  overflow: hidden;            /* jaga agar apa pun tidak keluar dari container */
+  overflow: hidden;           
 }	
 .single_marketing h3{}
 .single_marketing p{overflow: hidden;}
