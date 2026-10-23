@@ -20,7 +20,7 @@ Version      : 1.0
     12. START TEAM DESIGN
     13. START TESTIMONIALS DESIGN
     14. START PRICING DESIGN
-    15. START BLOG DESIGN
+    15. 
     16. START ADDRESS DESIGN
     17. START PARTNER DESIGN
     18. START FOOTER DESIGN
@@ -672,7 +672,7 @@ background:#c60000;
 
 /*
 * ----------------------------------------------------------------------------------------
-* 07.START SERVICE DESIGN
+* 07.START PROFIL DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .service_area{background:#f9fcff;padding-bottom:50px;}
@@ -689,13 +689,13 @@ margin-bottom:30px;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 07.END SERVICE DESIGN
+* 07.END PROFIL DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 08.START CASE STUDY DESIGN
+* 08.START LEGALITY & LISENCE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .case_content_top{}
@@ -722,7 +722,7 @@ margin-bottom:30px;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 08.END CASE STUDY DESIGN
+* 08.END LEGALITY & LISENCE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
@@ -1290,249 +1290,7 @@ color:#ffaa17;
  * ----------------------------------------------------------------------------------------
 */
 
-/*
-* ----------------------------------------------------------------------------------------
-* 15.START BLOG DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-.blog_area{background:#f9fcff;padding-bottom:50px;}
-.home_single_blog{
-background:#fff;
-margin-bottom:30px;
-}
-.home_blog_content{padding:30px;border-radius: 10px;}
-.blog-img img {
-	width: 1000%;
-}
-.home_single_blog img {
-	width: 100%;
-}
-.blog_title_info {
-	border-bottom: 1px solid #eee;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
-}
-.blog_title_info h2{}
-.blog_title_info h2 a {
-	color: #1b2032;
-	transition: 0.3s;
-	margin-bottom: 5px;
-	display: inline-block;
-}
-.blog_title_info h2 a:hover{color:#ffaa17;}
-.blog_title_info span {
-	font-size: 14px;
-	margin: 0 5px;
-}
-.blog_title_info span a {
-	color: #ffaa17;
-	transition: 0.3s;
-	letter-spacing: 1px;
-}
-.blog_title_info span a:hover{color:#1b2032;}
-.home_single_blog p{}
-.home_b_btn {
-	color: #1b2032;
-	font-weight: 300;
-	margin-top: 10px;
-	display: inline-block;
-}
-.home_b_btn:hover{color:#ffaa17;}
 
-/*START BLOG SIDEBAR DESIGN*/
-.contact_form_blog{padding-top:0px!important;}
-.blog_sidebar_title {
-	border-bottom: 1px solid #eee;
-	color: #1b2032;
-	font-size: 20px;
-	font-weight: 600;
-	letter-spacing: x;
-	margin-bottom: 15px;
-	margin-top: 0;
-	padding-bottom: 10px;
-	text-transform: capitalize;
-}
-.blog_search, .latest_blog, .advertisement_post, .video_post, .categories, .tag, .banner {
-	margin-bottom: 30px;
-	background: #fff;
-	padding: 30px 30px;
-	border-radius:10px;
-	border-top: 3px solid #ffaa17;
-	box-shadow:0 10px 40px -10px rgba(0,64,128,.2);
-}
-.tag{overflow: hidden;}
-.blog_search{}
-.blog_search input {
-background: #f8f4ef none repeat scroll 0 0;
-border: 1px solid #eee;
-border-radius: 0;
-color: #1b2032;
--webkit-transition: all 0.3s ease 0s;
-transition: all 0.3s ease 0s;
-height: 50px;
-}
-.blog_search input:focus{border: 1px solid #ffaa17;}
-.single_latest_blog {
-	overflow: hidden;
-	border-bottom: 1px solid #eee;
-	padding-bottom: 15px;
-	margin-bottom: 20px;
-}
-.single_latest_blog h4 {
-	color: #666;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 28px;
-	margin: 0;
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-}
-.single_latest_blog:hover h4 { color: #ffaa17 }
-.single_latest_blog span { color: #161616 }
-.single_upcoming_event {margin-bottom: 20px;}
-.single_upcoming_event h4 {
-	color: #1b2032;
-	font-size: 17px;
-	font-weight: 600;
-	line-height: 28px;
-	margin: 10px 0 0;
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-}
-.single_upcoming_event:hover h4 { color: #ffaa17 }
-.single_upcoming_event span i{margin-right:5px;color: #ffaa17 }
-.single_upcoming_event span { color: #777 }
-.categories ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.categories ul li { }
-.categories ul li a {
-	color: #1b2032;
-	display: block;
-	font-size: 14px;
-	padding: 5px 0;
-	font-family: poppins;
-	font-weight: 400;
-}
-.categories ul li a:hover { color: #ffaa17 }
-.categories ul li a i { margin-right: 10px }
-.video_post iframe {
-    width: 100%;
-    height: 100%;
-    border: medium none;
-}
-.tag a {
-	border: 2px solid #1b2032;
-	border-radius: 30px;
-	color: #1b2032;
-	display: block;
-	float: left;
-	font-size: 14px;
-	font-weight: 400;
-	margin: 6px 4px;
-	padding: 3px 20px;
-	text-transform: capitalize;
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-	background: #fff;
-}
-.tag a:hover {
-    background: #ffaa17;
-    color: #fff;
-    border: 2px solid #ffaa17;
-}
-/*END BLOG SIDEBAR DESIGN*/
-/*START BLOG SINGLE PAGE DESIGN*/
-.bc_left {
-	padding-left: 30px;
-	font-style: italic;
-	font-weight: 600;
-}
-.bc_bottom{margin-bottom:30px;}
-.single_blog_post { margin-bottom: 60px }
-.single_blog_post img {
-    width: 750px;
-    height: 455px;
-}
-.blog_post_text h4 { margin: 30px 0 }
-.author_part {
-	margin-bottom: 30px;
-	overflow: hidden;
-	margin-top: 60px;
-}
-.single_author {
-	background: #fff none repeat scroll 0 0;
-	padding: 40px;
-	border-radius: 10px;
-	box-shadow: 0 10px 40px -10px rgba(0,64,128,.08);
-	overflow: hidden;
-}
-.author_part img {
-	border: 4px solid #ffaa17;
-	border-radius: 100px;
-	float: left;
-	height: 120px;
-	margin-right: 20px;
-	width: 120px;
-}
-.author_part h4 {text-transform: uppercase;
-font-size: 16px;
-font-weight:700;
-letter-spacing: 1px; }
-.author_part p { margin-bottom: 0 }
-.blog_head_title {
-border-bottom: 1px solid #eee;
-margin: 0 0 30px;
-padding-bottom: 10px;
-font-weight: 700;
-text-transform: uppercase;
-font-size: 18px;
-}
-.comments_part {
-    margin-bottom: 60px;
-}
-.single_comment {
-    margin-bottom: 30px;
-    background: #fff;
-    padding: 40px;
-	border-radius: 10px;
-	box-shadow: 0 10px 40px -10px rgba(0,64,128,.08);
-	overflow: hidden;
-}
-.single_comment_mbnone { margin-bottom: 0px }
-.single_comment img {
-    border: 4px solid #ffaa17;
-    border-radius: 100px;
-    float: left;
-    height: 120px;
-    margin-right: 20px;
-    width: 120px;
-}
-.single_comment h4 { font-size: 16px;
-font-weight:700;
-letter-spacing: 1px;
-text-transform: uppercase;}
-.single_comment p { margin-bottom: 0 }
-.comment-box {
-	background: #fff;
-	border-radius: 10px;
-}
-.comment_form input, .comment_form textarea {
-	border-bottom: 1px solid #dddd !important;
-	border-left: 0px;
-	border-right: 0px;
-	border-top: 0px;
-}
-.comment_form textarea {}
-
-/*END BLOG SINGLE PAGE DESIGN*/
-/*
-* ----------------------------------------------------------------------------------------
-* 15.END BLOG DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -2015,6 +1773,9 @@ position: relative;
 	margin-bottom: 40px;
 	font-size: 40px;
 	font-weight: 600;
+}
+.marketing_content h3 {
+    text-align: center;
 }
 .marketing_content img{}
 .marketing_text{}
