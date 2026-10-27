@@ -1806,3 +1806,82 @@ position: relative;
 * ----------------------------------------------------------------------------------------
 */
 
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* HERO STICKY + KONTEN MELENGKUNG (menimpa hero saat scroll)
+* ----------------------------------------------------------------------------------------
+*/
+.home_bg{
+	position: sticky;           /* hero menempel, tidak ikut bergeser */
+	top: 0;
+	z-index: 0;
+	height: 100vh;
+	height: 100svh;
+	min-height: 520px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home_bg > .container{ position: relative; z-index: 1; }
+.home_bg .hero-text{ padding-top: 0; }
+
+/* teks hero memudar saat di-scroll */
+@supports (animation-timeline: scroll()) {
+	.home_bg .hero-text{
+		animation: hero-fade linear both;
+		animation-timeline: scroll(root);
+		animation-range: 0 60vh;
+	}
+}
+@keyframes hero-fade{
+	to{ opacity: 0; transform: translateY(-40px) scale(.94); filter: blur(8px); }
+}
+
+/* panah scroll */
+.hero-scroll{
+	position: absolute;
+	left: 50%;
+	bottom: 32px;
+	z-index: 2;
+	width: 46px; height: 46px;
+	margin-left: -23px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.25);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	color: #fff;
+	font-size: 26px;
+	line-height: 44px;
+	text-align: center;
+	animation: hero-bounce 2s infinite;
+}
+.hero-scroll:hover{ color:#fff; background:#ffaa17; }
+@keyframes hero-bounce{
+	0%,100%{ transform: translateY(0); }
+	50%{ transform: translateY(8px); }
+}
+
+/* konten naik menimpa hero; tepi atas melengkung.
+   margin-top 0 => layar pertama hanya gambar penuh, putih baru muncul saat scroll */
+.page-content{
+	position: relative;
+	z-index: 10;
+	background: #fff;
+	margin-top: 0;
+	padding-top: 60px;
+	border-radius: 50% 50% 0 0 / 60px 60px 0 0;
+	box-shadow: 0 -20px 40px rgba(0,0,0,.15);
+}
+/* kartu fitur tidak lagi menjorok ke hero */
+.page-content .feature_area{ margin-top: 0; }
+.page-content .feature_bg{ margin-top: 0; }
+
+@media only screen and (max-width:768px){
+	.page-content{ border-radius: 50% 50% 0 0 / 30px 30px 0 0; padding-top: 30px; }
+}
+@media (prefers-reduced-motion: reduce){
+	.hero-scroll{ animation: none; }
+	.home_bg .hero-text{ animation: none; }
+}
