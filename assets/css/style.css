@@ -1885,3 +1885,42 @@ position: relative;
 	.hero-scroll{ animation: none; }
 	.home_bg .hero-text{ animation: none; }
 }
+/* lapisan blur di atas gambar hero, lalu hilang pelan */
+.home_bg::after{
+	content:"";
+	position:absolute; inset:0; z-index:0;
+	-webkit-backdrop-filter: blur(24px);
+	backdrop-filter: blur(24px);
+	animation: hero-unblur 1.4s ease-out .6s forwards;
+	pointer-events:none;
+}
+@keyframes hero-unblur{
+	to{ -webkit-backdrop-filter: blur(0); backdrop-filter: blur(0); opacity:0; }
+}
+
+/* teks hero muncul naik sedikit setelah gambar menjadi tajam */
+.home_bg .hero-text h2,
+.home_bg .hero-text p,
+.home_bg .hero-text a{
+	opacity:0; transform:translateY(24px);
+	animation: hero-rise .8s ease-out forwards;
+}
+.home_bg .hero-text h2{ animation-delay:1.2s; }
+.home_bg .hero-text p { animation-delay:1.4s; }
+.home_bg .hero-text a { animation-delay:1.6s; }
+@keyframes hero-rise{ to{ opacity:1; transform:none; } }
+.home_bg{ overflow:hidden; }
+
+.hero-bg{
+	position:absolute; inset:0; z-index:-1;
+	background-size:cover; background-position:center;
+	transform-origin:center center;
+	will-change:transform;
+	animation: hero-zoom 20s ease-out forwards;
+}
+@keyframes hero-zoom{
+	from{ transform:scale(1); }
+	to  { transform:scale(1.18); }
+}
+
+@media (prefers-reduced-motion:reduce){ .hero-bg{ animation:none; } }

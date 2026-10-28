@@ -83,5 +83,16 @@ $(function() {
 		});
 	}; 
 	siteMenuClone();
-
+// tandai menu halaman yang sedang dibuka
+(function(){
+	var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+	$('.site-navigation .site-menu > li > a, .site-navigation .site-menu .dropdown a').each(function(){
+		var href = ($(this).attr('href') || '').split('#')[0].toLowerCase();
+		if (href && href === here) {
+			$(this).addClass('is-current');
+			var $parent = $(this).closest('.has-children').children('a');
+			if (($parent.attr('href') || '#') !== '#') { $parent.addClass('is-current'); }
+		}
+	});
+})();
 });
